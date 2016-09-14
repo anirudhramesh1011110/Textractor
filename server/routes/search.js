@@ -14,9 +14,14 @@ function findMatch(param) {
       }else{
         var match= [];
         result.forEach((obj) => {
-          if(JSON.stringify(obj.data[0].entities).includes(param)){
-            match.push(obj.data[0].text.substring(0, 2000));
+          //console.log("ENTITIES", obj.data[0].entities)
+          //console.log(JSON.stringify(obj.data[0].entities));
+          if(JSON.stringify(obj.data[0].entities)){
+            if(JSON.stringify(obj.data[0].entities).includes(param)){
+              match.push(obj.data[0].text.substring(0, 2000));
+            }
           }
+
         });
         resolve(match);
       }
