@@ -4,7 +4,7 @@
   "description": "Uses Alyien's API to extract entities from text or URL",
   "main": "server/server.js",
   "scripts": {
-    "start": "concurrently -k \"nodemon server/server.js\" \"npm run watch\"",
+    "start": "concurrently -k \"node server/server.js\" \"npm run watch\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "watchify client/index.js -o client/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "postinstall": "browserify client/index.js -o client/bundle.js -t [ babelify --presets [ es2015 react ] ]"
