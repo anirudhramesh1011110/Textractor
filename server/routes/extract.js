@@ -4,12 +4,12 @@ const Mongoose = require('mongoose');
 
 //Create Alyien Text Api object
 var textapi = new AYLIENTextAPI({
-  application_id: process.env.AYLIEN_API_ID,
-  application_key: process.env.AYLIEN_API_KEY
+  application_id: "db4343f4",
+  application_key: "5053476b104f3e733ce3a688fc1eaa9f"
 });
 
 /*
- * Function saves each extraction. 
+ * Function saves each extraction.
  */
 function saveExtract(data) {
   var extract = new Extract({

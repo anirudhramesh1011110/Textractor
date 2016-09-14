@@ -12,8 +12,8 @@ const log = new Log();
 // New Hapi Server
 const server = new Hapi.Server();
 
-// Mongo Connection String from ENV
-const mongodb_uri = process.env.MONGODB_URI;
+// Mongo Connection String
+const mongodb_uri = "mongodb://carlabs:tempPass@ds029466.mlab.com:29466/carlabs";
 
 // Configure Database
 Mongoose.connect(mongodb_uri);
