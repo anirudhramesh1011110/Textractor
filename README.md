@@ -2,6 +2,7 @@
 Uses Alyien's API to extract entities from text or from URL.
 
 # Config
+ - These are already included.
 1. Alyien API key and ID.
 2. MongoDB URI
 
